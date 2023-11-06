@@ -1,0 +1,845 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mainScreen {
+  background-image: url("../public/bgimg.png");
+  max-width: 100%;
+  margin: auto;
+  background-position: center;
+  height: 100vh;
+}
+
+.font {
+  font-family: "Arsenal", sans-serif;
+}
+
+.listView {
+  display: flex;
+  padding: 15px;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainImg {
+  line-height: 67px;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.middleContent {
+  padding-right: 110px;
+}
+
+.middleContent a {
+  text-transform: uppercase;
+  font-family: "Arsenal", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.secondA {
+  padding-left: 110px;
+}
+.thirdA {
+  padding-left: 110px;
+}
+
+.signin {
+  font-size: 25px;
+  font-family: "Arsenal", sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  padding-right: 15px;
+}
+
+.secondScreen {
+  /* border: 2px solid white; */
+  width: 94vw;
+  margin: auto;
+  display: flex;
+}
+.firstHalf {
+  width: 50vw;
+  padding-left: 65px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.secondHalf {
+  border-left: 1px solid rgba(229, 229, 229, 0.17);
+  padding-left: 15px;
+  padding-top: 55px;
+  width: 50vw;
+}
+
+.head {
+  font-family: "Inter", sans-serif;
+  color: #e5e5e5;
+  margin-bottom: 45px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.AllInput {
+  background-color: transparent;
+  margin-top: 75px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  outline: none;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  width: 50%;
+  color: rgba(229, 229, 229, 0.6);
+}
+
+.nameInput {
+  background-color: transparent;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  outline: none;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  width: 50%;
+  color: rgba(229, 229, 229, 0.6);
+}
+
+.emailInput {
+  background-color: transparent;
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  outline: none;
+  color: rgba(229, 229, 229, 0.6);
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  width: 50%;
+}
+
+.phoneInput {
+  background-color: transparent;
+  padding-bottom: 2px;
+  width: 50%;
+  border: none;
+  font-family: "Inter", sans-serif;
+  color: rgba(229, 229, 229, 0.6);
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  margin-top: 30px;
+  outline: none;
+  font-size: 18px;
+  line-height: 22px;
+}
+.AddressInput {
+  background-color: transparent;
+  padding-bottom: 2px;
+  max-width: 48%;
+  min-width: 48%;
+  max-height: 100px;
+  min-height: 50px;
+  width: 48%;
+  font-family: "Inter", sans-serif;
+  border: none;
+  color: rgba(229, 229, 229, 0.6);
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  margin-top: 30px;
+  outline: none;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.AddressSecond {
+  background-color: transparent;
+  padding-bottom: 2px;
+  font-family: "Inter", sans-serif;
+  width: 45%;
+  border: none;
+  color: rgba(229, 229, 229, 0.6);
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  margin-top: 20px;
+  outline: none;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cityFlex {
+  display: flex;
+}
+
+.CitySelect {
+  margin-top: 30px;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+}
+
+.CitySelect select {
+  outline: none;
+  font-family: "Inter", sans-serif;
+  color: rgba(229, 229, 229, 0.6);
+  padding: 2px;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  background-color: transparent;
+}
+
+.CitySelect option {
+  color: black;
+}
+
+.stateSelect {
+  margin-left: 25px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  color: rgba(229, 229, 229, 0.6);
+  padding: 2px;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  background-color: transparent;
+}
+
+.countrySelect {
+  margin-top: 50px;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+}
+
+.countrySelect select {
+  outline: none;
+  font-family: "Inter", sans-serif;
+  color: rgba(229, 229, 229, 0.6);
+  border: none;
+  padding: 2px;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 2px;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  background-color: transparent;
+}
+
+.countrySelect option {
+  color: black;
+}
+
+.countryFlex {
+  display: flex;
+  align-items: flex-end;
+}
+
+.zipFlex {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+}
+
+.zipCode {
+  outline: none;
+  font-family: "Inter", sans-serif;
+  color: rgba(229, 229, 229, 0.6);
+  border: none;
+  margin-left: 25px;
+  padding: 2px;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  background-color: transparent;
+  width: 30%;
+}
+
+.dropFile {
+  width: 85%;
+  height: 120px;
+  width: 340px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(229, 229, 229, 0.51);
+  border-radius: 10px;
+}
+
+.lkjDVC {
+  color: white;
+  border: 1px solid rgba(229, 229, 229, 0.51) !important;
+  height: 80px !important;
+}
+
+.lkjDVC svg {
+  display: none;
+}
+.nameS {
+  color: white;
+}
+
+.dmajdp > span {
+  font-size: 12px;
+  display: flex;
+  color: white;
+  margin-left: 25%;
+  color: #666;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bXgVCj span {
+  color: white !important;
+  padding-bottom: 10px;
+}
+
+.dmajdp > span {
+  color: white !important;
+}
+
+.contestSelect {
+  font-family: "Inter", sans-serif;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contestSelect select {
+  outline: none;
+  color: rgba(229, 229, 229, 0.6);
+  border: none;
+  padding: 2px;
+  font-size: 18px;
+  padding-right: 150px;
+  line-height: 22px;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  background-color: transparent;
+}
+
+.contestSelect option {
+  color: black;
+}
+
+.payment {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  line-height: 22px;
+  margin-top: 50px;
+}
+
+.nameCard {
+  background-color: transparent;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  outline: none;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  width: 60%;
+  color: rgba(229, 229, 229, 0.6);
+}
+
+.cardValid {
+  display: flex;
+  flex-direction: column;
+}
+
+.creditNumber {
+  background-color: transparent;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  width: 42%;
+  outline: none;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  color: rgba(229, 229, 229, 0.6);
+}
+
+.yearCard {
+  background-color: transparent;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  outline: none;
+  padding-bottom: 2px;
+  border: none;
+  width: 20%;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  color: rgba(229, 229, 229, 0.6);
+}
+
+.cvcCard {
+  background-color: transparent;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  width: 6%;
+  line-height: 22px;
+  outline: none;
+  padding-bottom: 2px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  color: rgba(229, 229, 229, 0.6);
+}
+
+.visa {
+  background-color: white;
+  height: 10px;
+  width: 20px;
+  padding: 1px;
+}
+
+.questionmarek {
+  border-radius: 20px;
+  background-color: black;
+  font-size: 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  padding: 2px;
+  margin-inline: 3px;
+}
+
+.master {
+  width: 20px;
+  background-color: white;
+  height: 10px;
+  padding: 1px;
+  padding-inline: 5px;
+  margin-left: 4px;
+}
+
+.manageTerm {
+  font-family: "Inter", sans-serif;
+  margin-top: 10px;
+}
+
+.terms {
+  text-decoration: none;
+  color: #13aaff;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.dropArea {
+  margin-top: 10px;
+}
+
+.checkBox {
+  color: white;
+  margin-top: 20px;
+}
+
+/* input[type="checkbox" i] {
+  background-color: #13AAFF;
+} */
+
+/* input[type=checkbox]:checked ::after {
+background-color: orange !important;
+} */
+
+.buttonManage {
+  margin-top: 10px;
+}
+
+.buttonManage button {
+  padding: 2px;
+  padding-inline: 60px;
+  font-family: "Inter";
+  border-radius: 13px;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.submitButton {
+  background-color: #57bf37;
+  color: white;
+}
+
+.cancelButton {
+  background-color: black;
+  margin-left: 15px;
+}
+
+.errorM {
+  color: red;
+  font-size: 13px;
+}
+
+.state {
+  margin-left: 20px;
+}
+
+.uploadPhoto {
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.uploadPhoto span {
+  border: 1px solid white;
+  padding-inline: 6px;
+  background-color: black;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+#form-file-upload {
+  height: 9rem;
+  width: 22rem;
+  margin-top: 10px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#input-file-upload {
+  display: none;
+}
+
+#label-file-upload {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-style: groove;
+  border-color: #cbd5e1;
+  background-color: transparent;
+  color: white;
+}
+
+.upload-button {
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+}
+
+.upload-button:hover {
+  text-decoration-line: underline;
+}
+
+#label-file-upload.drag-active {
+  background-color: #130e0e;
+  opacity: 0.4;
+  border: 2px solid white;
+}
+
+#drag-file-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* ***********************react-file-drop************** */
+
+.file-drop {
+  /* relatively position the container bc the contents are absolute */
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.file-drop > .file-drop-target {
+  /* basic styles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+
+  /* horizontally and vertically center all content */
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+
+  align-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+
+  text-align: center;
+}
+
+.file-drop > .file-drop-target.file-drop-dragging-over-frame {
+  /* overlay a black mask when dragging over the frame */
+  border: none;
+  background-color: rgba(0, 0, 0, 0.65);
+  box-shadow: none;
+  z-index: 50;
+  opacity: 1;
+
+  /* typography */
+  color: white;
+}
+
+.file-drop > .file-drop-target.file-drop-dragging-over-target {
+  /* turn stuff orange when we are dragging over the target */
+  color: #f5f7f3;
+  box-shadow: 0 0 13px 3px #62a842;
+}
+
+/* ******************Profile*************8 */
+
+.profileScreen {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+
+.prodileOutcome {
+  width: 85vw;
+  border: 2px solid #62a842;
+  background-color: #1a1010;
+  height: 80vh;
+  margin: auto;
+}
+
+.profileLabel {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  border: 1px solid;
+  margin-bottom: 15px;
+  width: 90%;
+  background-color: #2a1919;
+  font-weight: 500;
+  margin-left: 15px;
+  box-shadow: 0px 0px 5px #62a842;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mainImg {
+    line-height: 50px;
+    font-size: 40px;
+  }
+
+  .middleContent {
+    padding-right: 0px;
+  }
+  .secondA {
+    padding-left: 70px;
+  }
+
+  .thirdA {
+    padding-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mainImg {
+    line-height: 40px;
+    font-size: 35px;
+  }
+
+  .middleContent a {
+    font-size: 20px;
+  }
+  .secondA {
+    padding-left: 20px;
+  }
+
+  .thirdA {
+    padding-left: 20px;
+  }
+
+  .firstHalf {
+    padding-left: 5px;
+  }
+
+  .nameInput {
+    width: 70%;
+  }
+
+  .AllInput {
+    width: 70%;
+  }
+
+  .emailInput {
+    width: 70%;
+  }
+  .phoneInput {
+    width: 70%;
+  }
+
+  .AddressInput {
+    max-width: 200px;
+    width: 200px;
+  }
+
+  .zipCode {
+    width: 40%;
+  }
+
+  .contestSelect select {
+    padding-right: 80px;
+  }
+
+  .buttonManage button {
+    padding-inline: 35px;
+  }
+
+  .cvcCard {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  .mainScreen {
+    height: 100%;
+  }
+
+  .listView {
+    padding: 19px;
+  }
+
+  .secondScreen {
+    flex-direction: column;
+  }
+
+  .mainImg {
+    line-height: 0px;
+    font-size: 26px;
+  }
+
+  .middleContent a {
+    font-size: 18px;
+  }
+
+  .signin {
+    font-size: 20px;
+  }
+
+  .firstHalf {
+    padding-left: 20px;
+  }
+
+  .AllInput {
+    width: 100%;
+  }
+
+  .nameInput {
+    width: 100%;
+  }
+  .emailInput {
+    width: 100%;
+  }
+  .phoneInput {
+    width: 100%;
+  }
+
+  .AddressInput {
+    max-width: 231px;
+    width: 216px;
+  }
+
+  .secondHalf {
+    border-left: none;
+    padding-left: 15px;
+    padding-top: 40px;
+    width: 90vw;
+  }
+
+  .buttonManage {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .zipCode {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .listView {
+    padding: 10px;
+  }
+
+  .middleContent {
+    display: none;
+  }
+
+  .mainImg {
+    font-size: 18px;
+    padding-left: 0px;
+  }
+  .middleContent a {
+    font-size: 14px;
+  }
+
+  .secondA {
+    padding-left: 10px;
+  }
+
+  .thirdA {
+    padding-left: 10px;
+  }
+
+  .firstHalf {
+    padding-left: 10px;
+  }
+
+  .secondHalf {
+    border-left: none;
+    padding-left: 10px;
+    padding-top: 30px;
+    width: 90vw;
+  }
+  .signin {
+    font-size: 15px;
+    padding-right: 0px;
+  }
+}
