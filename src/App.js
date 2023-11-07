@@ -127,9 +127,9 @@ function App() {
   };
 
   useEffect(() => {
-    countryData();
-    stateData();
-    cityData();
+    // countryData();
+    // stateData();
+    // cityData();
   }, []);
 
   const check = [
